@@ -37,7 +37,7 @@ module.exports = {
         600: '37.5rem',
       },
       backgroundImage: {
-        contacts: "url('/public/assets/images/bg-images/location.png')",
+        contacts: "url('/assets/images/bg-images/location.png')",
       },
     },
   },
