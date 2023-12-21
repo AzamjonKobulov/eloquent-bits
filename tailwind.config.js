@@ -32,6 +32,10 @@ module.exports = {
         7: '7px',
         15: '0.9375rem',
       },
+      height: {
+        400: '25rem',
+        600: '37.5rem',
+      },
     },
   },
   plugins: [],
