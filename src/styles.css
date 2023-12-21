@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Oxanium:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-oxanium bg-black;
+  }
+
+  h1 {
+    @apply uppercase font-bold font-chakra text-white text-40 lg:text-80;
+  }
+
+  h2 {
+    @apply uppercase font-bold font-chakra text-white text-32 lg:text-6xl;
+  }
+
+  h3 {
+    @apply uppercase font-bold text-white text-xl lg:text-2xl;
+  }
+
+  p {
+    @apply text-sm lg:text-base font-light text-white/80;
+  }
+
+  section {
+    @apply pb-24 lg:pb-40;
+  }
+}
+
+.bordered-text {
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
+  color: transparent;
+}
+
+.hero-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 62%,
+    rgba(0, 0, 0, 0.3478641456582633) 98%
+  );
+}
+
+.active-tab {
+  @apply font-semibold text-brand-green-100 bg-brand-green-100/5 border-brand-green-100;
+}
+
+.active-tab-icon {
+  @apply fill-brand-green-100;
+}
