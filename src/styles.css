@@ -30,7 +30,7 @@
   }
 
   section {
-    @apply pb-24 lg:pb-40;
+    @apply max-w-base w-full mx-auto pb-24 lg:pb-40;
   }
 }
 

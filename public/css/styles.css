@@ -476,6 +476,10 @@ p{
 }
 
 section{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 101.875rem;
   padding-bottom: 6rem;
 }
 
@@ -606,6 +610,9 @@ section{
 .bottom-0{
   bottom: 0px;
 }
+.bottom-10{
+  bottom: 2.5rem;
+}
 .bottom-12{
   bottom: 3rem;
 }
@@ -615,6 +622,9 @@ section{
 .left-1\/2{
   left: 50%;
 }
+.left-12{
+  left: 3rem;
+}
 .right-0{
   right: 0px;
 }
@@ -623,15 +633,6 @@ section{
 }
 .top-24{
   top: 6rem;
-}
-.bottom-1\/2{
-  bottom: 50%;
-}
-.left-12{
-  left: 3rem;
-}
-.bottom-10{
-  bottom: 2.5rem;
 }
 .z-20{
   z-index: 20;
@@ -646,8 +647,14 @@ section{
   margin-left: auto;
   margin-right: auto;
 }
+.\!-mt-12{
+  margin-top: -3rem !important;
+}
 .-mt-12{
   margin-top: -3rem;
+}
+.-mt-\[7\.5rem\]{
+  margin-top: -7.5rem;
 }
 .ml-auto{
   margin-left: auto;
@@ -658,17 +665,11 @@ section{
 .mt-5{
   margin-top: 1.25rem;
 }
-.mt-\[7\.5rem\]{
-  margin-top: 7.5rem;
-}
-.-mt-\[7\.5rem\]{
-  margin-top: -7.5rem;
-}
 .mt-7{
   margin-top: 7px;
 }
-.\!-mt-12{
-  margin-top: -3rem !important;
+.mt-\[7\.5rem\]{
+  margin-top: 7.5rem;
 }
 .flex{
   display: flex;
@@ -688,11 +689,17 @@ section{
 .h-16{
   height: 4rem;
 }
+.h-400{
+  height: 25rem;
+}
 .h-5{
   height: 1.25rem;
 }
 .h-6{
   height: 1.5rem;
+}
+.h-600{
+  height: 37.5rem;
 }
 .h-64{
   height: 16rem;
@@ -700,17 +707,11 @@ section{
 .h-9{
   height: 2.25rem;
 }
-.h-\[25rem\]{
-  height: 25rem;
+.h-\[44\.5rem\]{
+  height: 44.5rem;
 }
 .h-full{
   height: 100%;
-}
-.h-400{
-  height: 25rem;
-}
-.h-600{
-  height: 37.5rem;
 }
 .w-1\/4{
   width: 25%;
@@ -730,24 +731,18 @@ section{
 .w-\[9\.625rem\]{
   width: 9.625rem;
 }
-.w-full{
-  width: 100%;
-}
-.w-auto{
-  width: auto;
-}
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
+}
+.w-full{
+  width: 100%;
 }
 .max-w-3xl{
   max-width: 48rem;
 }
 .max-w-\[37rem\]{
   max-width: 37rem;
-}
-.max-w-base{
-  max-width: 101.875rem;
 }
 .max-w-nav{
   max-width: 113.875rem;
@@ -758,9 +753,6 @@ section{
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.cursor-pointer{
-  cursor: pointer;
 }
 .list-disc{
   list-style-type: disc;
@@ -774,14 +766,23 @@ section{
 .grid-rows-2{
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
+.flex-col{
+  flex-direction: column;
+}
 .place-content-center{
   place-content: center;
+}
+.items-start{
+  align-items: flex-start;
 }
 .items-end{
   align-items: flex-end;
 }
 .items-center{
   align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
 }
 .justify-center{
   justify-content: center;
@@ -810,6 +811,11 @@ section{
 .gap-8{
   gap: 2rem;
 }
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-y-12 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
@@ -830,6 +836,11 @@ section{
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -839,6 +850,11 @@ section{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden{
   overflow: hidden;
@@ -852,6 +868,10 @@ section{
 .border-b{
   border-bottom-width: 1px;
 }
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-brand-green-100\/5{
   border-color: rgb(1 252 191 / 0.05);
 }
@@ -860,10 +880,6 @@ section{
 }
 .border-white\/30{
   border-color: rgb(255 255 255 / 0.3);
-}
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-black{
   --tw-bg-opacity: 1;
@@ -878,6 +894,15 @@ section{
 .bg-brand-green-100\/5{
   background-color: rgb(1 252 191 / 0.05);
 }
+.bg-contacts{
+  background-image: url('/public/assets/images/bg-images/location.png');
+}
+.bg-cover{
+  background-size: cover;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
 .fill-white{
   fill: #fff;
 }
@@ -890,6 +915,9 @@ section{
 }
 .p-24{
   padding: 6rem;
+}
+.p-6{
+  padding: 1.5rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -923,23 +951,14 @@ section{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.pb-24{
-  padding-bottom: 6rem;
-}
-.pb-40{
-  padding-bottom: 10rem;
+.pl-8{
+  padding-left: 2rem;
 }
 .pt-0{
   padding-top: 0px;
 }
 .pt-32{
   padding-top: 8rem;
-}
-.pl-10{
-  padding-left: 2.5rem;
-}
-.pl-8{
-  padding-left: 2rem;
 }
 .text-center{
   text-align: center;
@@ -955,6 +974,13 @@ section{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.font-bold{
+  font-weight: 700;
+}
 .font-light{
   font-weight: 300;
 }
@@ -966,9 +992,6 @@ section{
 }
 .font-semibold{
   font-weight: 600;
-}
-.font-bold{
-  font-weight: 700;
 }
 .uppercase{
   text-transform: uppercase;
@@ -1007,8 +1030,9 @@ section{
 .text-white\/80{
   color: rgb(255 255 255 / 0.8);
 }
-.text-brand-green-200{
-  color: #00FCBFCC;
+.\!text-brand-green-100{
+  --tw-text-opacity: 1 !important;
+  color: rgb(1 252 191 / var(--tw-text-opacity)) !important;
 }
 .underline{
   text-decoration-line: underline;
@@ -1023,6 +1047,9 @@ section{
 }
 .duration-200{
   transition-duration: 200ms;
+}
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .bordered-text {
@@ -1068,19 +1095,9 @@ section{
   z-index: 10;
 }
 
-.after\:hidden::after{
-  content: var(--tw-content);
-  display: none;
-}
-
 .after\:bg-black\/50::after{
   content: var(--tw-content);
   background-color: rgb(0 0 0 / 0.5);
-}
-
-.after\:bg-brand-green-100\/10::after{
-  content: var(--tw-content);
-  background-color: rgb(1 252 191 / 0.1);
 }
 
 .hover\:scale-125:hover{
@@ -1104,30 +1121,9 @@ section{
   color: rgb(1 252 191 / var(--tw-text-opacity));
 }
 
-.after\:hover\:bg-brand-green-100:hover::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 252 191 / var(--tw-bg-opacity));
-}
-
 .after\:hover\:bg-brand-green-100\/5:hover::after{
   content: var(--tw-content);
   background-color: rgb(1 252 191 / 0.05);
-}
-
-.after\:hover\:bg-brand-green-100\/50:hover::after{
-  content: var(--tw-content);
-  background-color: rgb(1 252 191 / 0.5);
-}
-
-.after\:hover\:bg-brand-green-100\/20:hover::after{
-  content: var(--tw-content);
-  background-color: rgb(1 252 191 / 0.2);
-}
-
-.after\:hover\:bg-brand-green-100\/10:hover::after{
-  content: var(--tw-content);
-  background-color: rgb(1 252 191 / 0.1);
 }
 
 .focus\:border-brand-green-100:focus{
@@ -1145,39 +1141,6 @@ section{
 
 .group:hover .group-hover\:hidden{
   display: none;
-}
-
-.group:hover .group-hover\:scale-125{
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:after\:block::after{
-  content: var(--tw-content);
-  display: block;
-}
-
-.group:hover .after\:group-hover\:bg-brand-green-100\/10::after{
-  content: var(--tw-content);
-  background-color: rgb(1 252 191 / 0.1);
-}
-
-.group:hover .group-hover\:after\:bg-brand-green-100\/10::after{
-  content: var(--tw-content);
-  background-color: rgb(1 252 191 / 0.1);
-}
-
-.group:hover .after\:group-hover\:bg-brand-green-100::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 252 191 / var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:after\:bg-brand-green-100::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 252 191 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px){
@@ -1350,10 +1313,6 @@ section{
   .lg\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .lg\:pb-40{
-    padding-bottom: 10rem;
   }
 
   .lg\:pt-20{

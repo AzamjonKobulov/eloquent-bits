@@ -36,6 +36,9 @@ module.exports = {
         400: '25rem',
         600: '37.5rem',
       },
+      backgroundImage: {
+        contacts: "url('/public/assets/images/bg-images/location.png')",
+      },
     },
   },
   plugins: [],
