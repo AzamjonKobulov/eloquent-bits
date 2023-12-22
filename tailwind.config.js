@@ -39,6 +39,10 @@ module.exports = {
       backgroundImage: {
         contacts: "url('/assets/images/bg-images/location.png')",
       },
+      backgroundColor: {
+        'product-radial':
+          'background-image: radial-gradient(50% 0% at 50% 0%, rgba(0, 57, 43, 0.80) 0%, rgba(1, 1, 1, 0.80) 100%);',
+      },
     },
   },
   plugins: [],
