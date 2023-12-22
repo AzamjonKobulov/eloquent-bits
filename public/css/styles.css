@@ -722,10 +722,6 @@ section{
 .w-\[9\.625rem\]{
   width: 9.625rem;
 }
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
-}
 .w-full{
   width: 100%;
 }
@@ -876,6 +872,9 @@ section{
 .bg-contacts{
   background-image: url('/assets/images/bg-images/location.png');
 }
+.bg-contacts-mobile{
+  background-image: url('/assets/images/bg-images/location-mobile.png');
+}
 .bg-cover{
   background-size: cover;
 }
@@ -891,9 +890,6 @@ section{
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
-}
-.p-6{
-  padding: 1.5rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -1081,21 +1077,6 @@ section{
   background-color: rgb(0 0 0 / 0.5);
 }
 
-.after\:bg-black\/60::after{
-  content: var(--tw-content);
-  background-color: rgb(0 0 0 / 0.6);
-}
-
-.after\:bg-brand-green-200\/10::after{
-  content: var(--tw-content);
-  background-color: rgb(0 252 191 / 0.1);
-}
-
-.after\:bg-brand-green-200\/20::after{
-  content: var(--tw-content);
-  background-color: rgb(0 252 191 / 0.2);
-}
-
 .hover\:scale-125:hover{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -1260,16 +1241,16 @@ section{
     justify-content: space-between;
   }
 
+  .lg\:gap-0{
+    gap: 0px;
+  }
+
   .lg\:gap-12{
     gap: 3rem;
   }
 
   .lg\:gap-6{
     gap: 1.5rem;
-  }
-
-  .lg\:gap-0{
-    gap: 0px;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -1332,6 +1313,10 @@ section{
     border-left-width: 1px;
   }
 
+  .lg\:bg-contacts{
+    background-image: url('/assets/images/bg-images/location.png');
+  }
+
   .lg\:p-12{
     padding: 3rem;
   }
@@ -1384,41 +1369,6 @@ section{
 
   .lg\:text-white\/80{
     color: rgb(255 255 255 / 0.8);
-  }
-
-  .lg\:after\:bg-transparent::after{
-    content: var(--tw-content);
-    background-color: transparent;
-  }
-
-  .lg\:after\:bg-black\/40::after{
-    content: var(--tw-content);
-    background-color: rgb(0 0 0 / 0.4);
-  }
-
-  .lg\:after\:bg-black\/10::after{
-    content: var(--tw-content);
-    background-color: rgb(0 0 0 / 0.1);
-  }
-
-  .lg\:after\:bg-black\/20::after{
-    content: var(--tw-content);
-    background-color: rgb(0 0 0 / 0.2);
-  }
-
-  .lg\:after\:bg-black\/30::after{
-    content: var(--tw-content);
-    background-color: rgb(0 0 0 / 0.3);
-  }
-
-  .lg\:after\:bg-black\/50::after{
-    content: var(--tw-content);
-    background-color: rgb(0 0 0 / 0.5);
-  }
-
-  .lg\:after\:bg-none::after{
-    content: var(--tw-content);
-    background-image: none;
   }
 
   .lg\:hover\:border-brand-green-100:hover{

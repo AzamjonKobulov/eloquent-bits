@@ -38,6 +38,8 @@ module.exports = {
       },
       backgroundImage: {
         contacts: "url('/assets/images/bg-images/location.png')",
+        'contacts-mobile':
+          "url('/assets/images/bg-images/location-mobile.png')",
       },
       backgroundColor: {
         'product-radial':
