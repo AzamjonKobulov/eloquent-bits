@@ -962,6 +962,10 @@ section{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold{
   font-weight: 700;
 }
@@ -1236,6 +1240,10 @@ section{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
   .lg\:flex-col{
     flex-direction: column;
   }
@@ -1258,6 +1266,10 @@ section{
 
   .lg\:gap-6{
     gap: 1.5rem;
+  }
+
+  .lg\:gap-0{
+    gap: 0px;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -1328,6 +1340,10 @@ section{
     padding: 6rem;
   }
 
+  .lg\:p-6{
+    padding: 1.5rem;
+  }
+
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1359,6 +1375,11 @@ section{
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:text-white\/80{

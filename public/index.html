@@ -1906,8 +1906,8 @@
         <!-- Text & Button -->
         <section class="space-y-8">
           <h2>Contacts</h2>
-          <div class="space-y-4">
-            <div class="space-y-4 text-2xl">
+          <div class="text-lg lg:text-2xl space-y-4">
+            <div class="space-y-4">
               <a href="#" class="text-white/80">1681 Brodway, NY</a>
               <div class="flex flex-col space-y-4 text-brand-green-100">
                 <a href="#">+1 (347) 251-4127</a>
@@ -1917,7 +1917,7 @@
           </div>
           <a
             href="#"
-            class="relative w-fit flex items-center gap-2.5 text-brand-green-100 capitalize font-medium text-2xl bg-brand-green-100/5 border border-brand-green-100/5 rounded hover:border-brand-green-100 py-4 px-8"
+            class="relative lg:w-fit flex items-center justify-center lg:justify-start gap-2.5 text-brand-green-100 capitalize font-medium text-2xl bg-brand-green-100/5 border border-brand-green-100/5 rounded hover:border-brand-green-100 py-4 px-8"
           >
             <span>Contact Us</span>
             <svg
@@ -2012,8 +2012,12 @@
 
     <!-- FOOTER -->
     <footer id="footer">
-      <section class="flex items-center justify-between text-sm p-6">
-        <p>Copyright © 2023 Eloquent Bits Inc. All rights reserved.</p>
+      <section
+        class="flex flex-col lg:flex-row gap-3 lg:gap-0 lg:items-center justify-between text-xs lg:text-sm py-6 px-15 lg:p-6"
+      >
+        <p class="text-xs lg:text-sm">
+          Copyright © 2023 Eloquent Bits Inc. All rights reserved.
+        </p>
         <!-- Links -->
         <ul class="flex items-center capitalize text-white/80 gap-6">
           <li>
