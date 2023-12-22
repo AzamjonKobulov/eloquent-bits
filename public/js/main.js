@@ -1,14 +1,33 @@
+// Tabs Functions
+
+// Function to switch tabs
+function switchTab(tabId) {
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach((content) => content.classList.add('hidden'));
+
+  const tabs = document.querySelectorAll('.tab-button');
+  tabs.forEach((tab) => tab.classList.remove('active-tab'));
+
+  const selectedTabContent = document.getElementById(tabId);
+  selectedTabContent.classList.remove('hidden');
+
+  const selectedTab = document.querySelector(`[data-tab="${tabId}"]`);
+  selectedTab.classList.add('active-tab');
+}
+
+const tabButtons = document.querySelectorAll('.tab-button');
+tabButtons.forEach((button) => {
+  button.addEventListener('click', () => switchTab(button.dataset.tab));
+});
+
+switchTab('tab1');
+
 // Swiper Functions
 document.addEventListener('DOMContentLoaded', function () {
-  // Initialize Swiper
   const mySwiper = new Swiper('.mySwiper', {
     slidesPerView: 1.5,
     spaceBetween: 10,
     loop: true,
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -33,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  // Custom navigation events
   document.getElementById('btn-prev').addEventListener('click', function () {
     mySwiper.slidePrev();
   });

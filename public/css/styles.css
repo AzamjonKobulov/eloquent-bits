@@ -1191,6 +1191,10 @@ section{
     margin-top: 7.5rem;
   }
 
+  .lg\:ml-auto{
+    margin-left: auto;
+  }
+
   .lg\:block{
     display: block;
   }

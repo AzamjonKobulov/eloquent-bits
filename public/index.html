@@ -508,7 +508,8 @@
             <!-- Tabs buttons -->
             <div class="flex lg:flex-col lg:space-y-6 text-white/80 text-32">
               <button
-                class="active-tab w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
+                data-tab="tab1"
+                class="tab-button active-tab w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
               >
                 <svg
                   width="32"
@@ -525,7 +526,8 @@
                 <span class="uppercase hidden lg:block"> Developing </span>
               </button>
               <button
-                class="w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
+                data-tab="tab2"
+                class="tab-button w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
               >
                 <svg
                   width="32"
@@ -545,7 +547,8 @@
                 </span>
               </button>
               <button
-                class="w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
+                data-tab="tab3"
+                class="tab-button w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
               >
                 <svg
                   width="32"
@@ -563,7 +566,8 @@
                 <span class="uppercase hidden lg:block">Security</span>
               </button>
               <button
-                class="w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
+                data-tab="tab4"
+                class="tab-button w-1/4 lg:w-full flex items-center justify-center lg:justify-start lg:gap-6 border-b lg:border-b-0 lg:border-l border-white/30 rounded py-4 px-2 lg:py-6 lg:px-8"
               >
                 <svg
                   width="32"
@@ -586,7 +590,7 @@
           <!-- Tabs contents -->
           <div class="lg:w-[43.0625rem]">
             <!-- 1st tab content -->
-            <div class="space-y-6 lg:space-y-[3.25rem]">
+            <div id="tab1" class="tab-content space-y-6 lg:space-y-[3.25rem]">
               <div class="max-w-xl space-y-2 lg:space-y-3">
                 <h3>Full Stack Development</h3>
                 <p class="text-white/60">
@@ -597,7 +601,7 @@
                   standards.
                 </p>
               </div>
-              <div class="max-w-xl ml-auto space-y-2 lg:space-y-3">
+              <div class="max-w-xl lg:ml-auto space-y-2 lg:space-y-3">
                 <h3>Content Management Systems</h3>
                 <p class="text-white/60">
                   Our CMS platforms are custom designed and developed to fully
@@ -623,7 +627,10 @@
             </div>
 
             <!-- 2nd tab content -->
-            <div class="hidden max-w-xl space-y-6 lg:space-y-[3.25rem]">
+            <div
+              id="tab2"
+              class="tab-content hidden max-w-xl space-y-6 lg:space-y-[3.25rem]"
+            >
               <div class="space-y-2 lg:space-y-3">
                 <h3>
                   We can support you <br />
@@ -753,7 +760,10 @@
             </div>
 
             <!-- 3rd tab content -->
-            <div class="hidden space-y-6 lg:space-y-[3.25rem] lg:mt-40">
+            <div
+              id="tab3"
+              class="tab-content hidden space-y-6 lg:space-y-[3.25rem] lg:mt-40"
+            >
               <div class="max-w-xl space-y-2 lg:space-y-3">
                 <h3>
                   For us security <br />
@@ -774,6 +784,37 @@
                   >
                   list to guide their secure coding efforts. Automated web
                   application and web services vulnerability assessment tool.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4th tab content -->
+            <div id="tab4" class="tab-content space-y-6 lg:space-y-[3.25rem]">
+              <div class="max-w-xl space-y-2 lg:space-y-3">
+                <h3>
+                  In developing the design, we rely on four main indicators
+                </h3>
+              </div>
+              <div class="max-w-xl space-y-2 lg:space-y-3">
+                <h3>Usability</h3>
+                <p class="text-white/60">
+                  Is it easy for users to solve the tasks they face?
+                </p>
+              </div>
+              <div class="max-w-xl lg:ml-auto space-y-2 lg:space-y-3">
+                <h3>Value</h3>
+                <p class="text-white/60">Is the product useful for users?</p>
+              </div>
+              <div class="max-w-xl space-y-2 lg:space-y-3">
+                <h3>adoptability</h3>
+                <p class="text-white/60">
+                  Will users start working with the product?
+                </p>
+              </div>
+              <div class="max-w-xl lg:ml-auto space-y-2 lg:space-y-3">
+                <h3>Attractiveness</h3>
+                <p class="text-white/60">
+                  Does the user like working with the product?
                 </p>
               </div>
             </div>
