@@ -1,26 +1,36 @@
 // Tabs Functions
 
-// Function to switch tabs
-function switchTab(tabId) {
-  const tabContents = document.querySelectorAll('.tab-content');
-  tabContents.forEach((content) => content.classList.add('hidden'));
+const tabButtons = document.querySelectorAll('.tab-button');
 
-  const tabs = document.querySelectorAll('.tab-button');
-  tabs.forEach((tab) => tab.classList.remove('active-tab'));
+tabButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    tabButtons.forEach((btn) => {
+      const icon = btn.querySelector('svg');
+      icon.classList.remove('active-tab-icon');
+    });
+
+    const clickedIcon = button.querySelector('svg');
+    clickedIcon.classList.add('active-tab-icon');
+
+    tabButtons.forEach((btn) => {
+      btn.classList.remove('active-tab');
+    });
+    button.classList.add('active-tab');
+
+    const tabId = button.getAttribute('data-tab');
+    showTabContent(tabId);
+  });
+});
+
+function showTabContent(tabId) {
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach((content) => {
+    content.classList.add('hidden');
+  });
 
   const selectedTabContent = document.getElementById(tabId);
   selectedTabContent.classList.remove('hidden');
-
-  const selectedTab = document.querySelector(`[data-tab="${tabId}"]`);
-  selectedTab.classList.add('active-tab');
 }
-
-const tabButtons = document.querySelectorAll('.tab-button');
-tabButtons.forEach((button) => {
-  button.addEventListener('click', () => switchTab(button.dataset.tab));
-});
-
-switchTab('tab1');
 
 // Swiper Functions
 document.addEventListener('DOMContentLoaded', function () {
@@ -46,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 32,
       },
       1440: {
-        slidesPerView: 4,
+        slidesPerView: 4.15,
         spaceBetween: 48,
       },
     },
