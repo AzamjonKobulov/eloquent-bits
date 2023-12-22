@@ -637,6 +637,15 @@ section{
 .top-2\/3{
   top: 66.666667%;
 }
+.-top-12{
+  top: -3rem;
+}
+.-top-16{
+  top: -4rem;
+}
+.bottom-6{
+  bottom: 1.5rem;
+}
 .z-10{
   z-index: 10;
 }
@@ -710,6 +719,12 @@ section{
 .h-full{
   height: 100%;
 }
+.h-40{
+  height: 10rem;
+}
+.h-\[23\.75rem\]{
+  height: 23.75rem;
+}
 .w-1\/4{
   width: 25%;
 }
@@ -730,6 +745,9 @@ section{
 }
 .w-full{
   width: 100%;
+}
+.w-40{
+  width: 10rem;
 }
 .max-w-3xl{
   max-width: 48rem;
@@ -896,6 +914,9 @@ section{
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.p-6{
+  padding: 1.5rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -1157,6 +1178,14 @@ section{
     top: 50%;
   }
 
+  .lg\:-top-32{
+    top: -8rem;
+  }
+
+  .lg\:bottom-12{
+    bottom: 3rem;
+  }
+
   .lg\:-mt-12{
     margin-top: -3rem;
   }
@@ -1195,6 +1224,14 @@ section{
 
   .lg\:h-auto{
     height: auto;
+  }
+
+  .lg\:h-64{
+    height: 16rem;
+  }
+
+  .lg\:h-400{
+    height: 25rem;
   }
 
   .lg\:w-64{
@@ -1360,6 +1397,11 @@ section{
   .lg\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pt-20{
