@@ -32,6 +32,16 @@ function showTabContent(tabId) {
   selectedTabContent.classList.remove('hidden');
 }
 
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    header.classList.add('bg-brand-green-200/10');
+  } else {
+    header.classList.remove('bg-brand-green-200/10');
+  }
+});
+
 // Swiper Functions
 document.addEventListener('DOMContentLoaded', function () {
   const mySwiper = new Swiper('.mySwiper', {
