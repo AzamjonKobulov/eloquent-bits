@@ -1,5 +1,21 @@
-// Tabs Functions
+// Mobile menu toggling funcs
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-close-btn');
 
+function toggleMobileMenu() {
+  mobileMenu.classList.toggle('hidden');
+  document.body.classList.toggle('overflow-hidden');
+}
+
+mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+mobileMenuCloseBtn.addEventListener('click', toggleMobileMenu);
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener('click', toggleMobileMenu);
+});
+
+// Tabs Functions
 const tabButtons = document.querySelectorAll('.tab-button');
 
 tabButtons.forEach((button) => {
@@ -32,6 +48,7 @@ function showTabContent(tabId) {
   selectedTabContent.classList.remove('hidden');
 }
 
+// Adding BG color when scrolling.
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
