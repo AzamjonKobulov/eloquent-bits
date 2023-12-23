@@ -2,6 +2,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
 const mobileMenuLinks = document.querySelectorAll('.mobile-menu-close-btn');
+//
 
 function toggleMobileMenu() {
   mobileMenu.classList.toggle('hidden');
@@ -10,7 +11,6 @@ function toggleMobileMenu() {
 
 function closeMobileMenu() {
   mobileMenu.classList.remove('hidden');
-  document.body.classList.remove('overflow-hidden');
   mobileMenuLinks.forEach((link) => link.classList.remove('text-white'));
 }
 
