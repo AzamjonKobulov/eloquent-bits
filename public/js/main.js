@@ -20,13 +20,15 @@ function closeMobileMenu() {
 mobileMenuBtn.addEventListener('click', toggleMobileMenu);
 mobileMenuCloseBtn.addEventListener('click', closeMobileMenu);
 
-navLinks.forEach((link) => {
+mobileMenuLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
 
     toggleMobileMenu();
 
-    navLinks.forEach((otherLink) => otherLink.classList.remove('text-white'));
+    mobileMenuLinks.forEach((otherLink) =>
+      otherLink.classList.remove('text-white')
+    );
     link.classList.add('text-white');
 
     const targetId = link.getAttribute('href').substring(1);
