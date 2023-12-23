@@ -25,6 +25,10 @@ module.exports = {
             100: '#01FCBF',
             200: '#00FCBFCC',
           },
+          gray: {
+            400: '#DDE3ED',
+            300: '#9196A0',
+          },
           blue: '#00BFFC',
         },
       },
@@ -45,6 +49,9 @@ module.exports = {
       backgroundColor: {
         'product-radial':
           'background-image: radial-gradient(50% 0% at 50% 0%, rgba(0, 57, 43, 0.80) 0%, rgba(1, 1, 1, 0.80) 100%);',
+      },
+      borderWidth: {
+        0.3: '0.0187rem',
       },
     },
   },

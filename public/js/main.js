@@ -9,7 +9,7 @@ function toggleMobileMenu() {
 }
 
 function closeMobileMenu() {
-  mobileMenu.classList.add('hidden');
+  mobileMenu.classList.remove('hidden');
   document.body.classList.remove('overflow-hidden');
   mobileMenuLinks.forEach((link) => link.classList.remove('text-white'));
 }

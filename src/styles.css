@@ -56,3 +56,11 @@
 .active-tab-icon {
   @apply fill-brand-green-100;
 }
+
+input[type='checkbox']:checked + label {
+  @apply bg-brand-green-100;
+}
+
+input[type='checkbox']:checked + label > svg {
+  @apply block;
+}
