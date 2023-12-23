@@ -42,6 +42,7 @@ mobileMenuLinks.forEach((link) => {
 // Function to toggle the CONTACT US WINDOW
 function toggleContactUs() {
   contactUsModal.classList.toggle('hidden');
+  document.body.classList.toggle('overflow-hidden');
 }
 
 openContactUsBtns.forEach((btn) =>
@@ -116,3 +117,5 @@ document.addEventListener('DOMContentLoaded', function () {
     .getElementById('btn-next')
     .addEventListener('click', () => mySwiper.slideNext());
 });
+
+const navLinks = document.querySelectorAll('.nav-link');
