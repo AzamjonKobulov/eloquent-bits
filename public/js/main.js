@@ -2,7 +2,9 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
 const mobileMenuLinks = document.querySelectorAll('.mobile-menu-close-btn');
-//
+const contactUsModal = document.querySelector('.contact-modal');
+const openContactUsBtns = document.querySelectorAll('.open-contact-us-btn');
+const closeContactUsBtns = document.querySelectorAll('.close-contact-us-btn');
 
 function toggleMobileMenu() {
   mobileMenu.classList.toggle('hidden');
@@ -37,6 +39,26 @@ mobileMenuLinks.forEach((link) => {
   });
 });
 
+// Function to toggle the CONTACT US WINDOW
+function toggleContactUs() {
+  contactUsModal.classList.toggle('hidden');
+}
+
+openContactUsBtns.forEach((btn) =>
+  btn.addEventListener('click', toggleContactUs)
+);
+
+closeContactUsBtns.forEach((btn) => {
+  btn.addEventListener('click', toggleContactUs);
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === contactUsModal) {
+    toggleContactUs();
+  }
+});
+
+// Tabs Funcs
 const tabButtons = document.querySelectorAll('.tab-button');
 
 tabButtons.forEach((button) => {
@@ -65,12 +87,14 @@ function showTabContent(tabId) {
   selectedTabContent.classList.remove('hidden');
 }
 
+// Add bg color func to the header when scrolling
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
   header.classList.toggle('bg-brand-green-200/10', window.scrollY > 100);
 });
 
+// Swiper funcs
 document.addEventListener('DOMContentLoaded', function () {
   const mySwiper = new Swiper('.mySwiper', {
     slidesPerView: 1.5,

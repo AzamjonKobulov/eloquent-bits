@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Eloquent Bits</title>
+  </head>
+  <body class="relative">
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu hidden fixed inset-0 bg-black z-50">
+      <!-- Logo & Button -->
+      <div class="flex items-center justify-between p-15">
+        <!-- Logo -->
+        <div class="w-[9.625rem] h-6">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo"
+            class="w-full h-full"
+          />
+        </div>
+        <!-- X button -->
+        <button class="mobile-menu-close-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.75 5.25L5.25 18.75"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18.75 18.75L5.25 5.25"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Links & Buttons -->
+      <ul class="space-y-12 capitalize text-2xl text-white/60 p-8">
+        <li>
+          <a class="mobile-menu-close-btn text-white" href="#hero">home</a>
+        </li>
+        <li>
+          <a class="mobile-menu-close-btn" href="#what-we-do">what we do</a>
+        </li>
+        <li>
+          <a class="mobile-menu-close-btn" href="#team">team</a>
+        </li>
+        <li>
+          <a class="mobile-menu-close-btn" href="#projects">projects</a>
+        </li>
+        <li>
+          <a class="mobile-menu-close-btn" href="#contacts">contacts</a>
+        </li>
+        <li class="flex items-center gap-4">
+          <a class="mobile-menu-close-btn" href="#">
+            <img
+              src="./assets/images/icons/phone.svg"
+              alt="Phone icon"
+              class="hover:scale-125 transition-all duration-200"
+            />
+          </a>
+          <a class="mobile-menu-close-btn" href="#">
+            <img
+              src="./assets/images/icons/envelope.svg"
+              alt="Envelope icon"
+              class="hover:scale-125 transition-all duration-200"
+            />
+          </a>
+        </li>
+        <li>
+          <button
+            class="open-contact-us-btn mobile-menu-close-btn group relative h-10 w-full flex items-center justify-center gap-2.5 uppercase text-brand-green-100 font-medium text-lg border border-brand-green-200/5 hover:border-brand-green-100 transition-all duration-200 rounded py-2 px-4"
+          >
+            <span>start project</span>
+            <svg
+              width="15"
+              height="16"
+              viewBox="0 0 15 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.34375 8H12.6562"
+                class="stroke-brand-green-100"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.4375 3.78125L12.6562 8L8.4375 12.2188"
+                class="stroke-brand-green-100"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <!-- Corners -->
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-0 left-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                fill="#00FCBF"
+              />
+            </svg>
+
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-0 right-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                fill="#00FCBF"
+              />
+            </svg>
+
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute bottom-0 left-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                fill="#00FCBF"
+              />
+            </svg>
+
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute bottom-0 right-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                fill="#00FCBF"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CONTACT US MODAL -->
+    <div
+      class="contact-modal hidden fixed inset-0 z-50 flex items-center justify-center bg-[#011A14C9]/80"
+    >
+      <!-- Modal -->
+      <div
+        class="lg:max-w-2xl w-full min-h-screen lg:min-h-0 lg: relative bg-black py-4 px-15 lg:p-12"
+      >
+        <!-- Modal mobile header -->
+        <div class="lg:hidden flex items-center justify-between">
+          <p
+            class="lg:hidden uppercase font-semibold text-xl text-brand-gray-300"
+          >
+            contact us
+          </p>
+          <!-- Mobile close button -->
+          <button class="close-contact-us-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.75 5.25L5.25 18.75"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.75 18.75L5.25 5.25"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Desktop close button -->
+        <button
+          class="close-contact-us-btn absolute top-4 right-4 hidden lg:block"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.2806 18.2194C19.3502 18.2891 19.4055 18.3718 19.4432 18.4628C19.4809 18.5539 19.5003 18.6515 19.5003 18.75C19.5003 18.8485 19.4809 18.9461 19.4432 19.0372C19.4055 19.1282 19.3502 19.2109 19.2806 19.2806C19.2109 19.3503 19.1281 19.4056 19.0371 19.4433C18.9461 19.481 18.8485 19.5004 18.7499 19.5004C18.6514 19.5004 18.5538 19.481 18.4628 19.4433C18.3717 19.4056 18.289 19.3503 18.2193 19.2806L11.9999 13.0603L5.78055 19.2806C5.63982 19.4214 5.44895 19.5004 5.24993 19.5004C5.05091 19.5004 4.86003 19.4214 4.7193 19.2806C4.57857 19.1399 4.49951 18.949 4.49951 18.75C4.49951 18.551 4.57857 18.3601 4.7193 18.2194L10.9396 12L4.7193 5.78063C4.57857 5.6399 4.49951 5.44902 4.49951 5.25C4.49951 5.05098 4.57857 4.86011 4.7193 4.71938C4.86003 4.57865 5.05091 4.49958 5.24993 4.49958C5.44895 4.49958 5.63982 4.57865 5.78055 4.71938L11.9999 10.9397L18.2193 4.71938C18.36 4.57865 18.5509 4.49958 18.7499 4.49958C18.949 4.49958 19.1398 4.57865 19.2806 4.71938C19.4213 4.86011 19.5003 5.05098 19.5003 5.25C19.5003 5.44902 19.4213 5.6399 19.2806 5.78063L13.0602 12L19.2806 18.2194Z"
+              fill="#3C3C3C"
+            />
+          </svg>
+        </button>
+        <!-- Modal body -->
+        <div class="space-y-12">
+          <p
+            class="hidden lg:block uppercase font-semibold text-center text-xl text-brand-gray-400 mt-12"
+          >
+            contact us
+          </p>
+          <!-- Form -->
+          <form action="#" class="space-y-12">
+            <div class="grid lg:grid-cols-2 gap-3">
+              <!-- Name -->
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full h-full bg-black text-brand-green-200 border-0.3 border-white/40 focus:border focus:border-brand-green-200 rounded outline-none placeholder:text-brand-gray-300 p-4"
+                  placeholder="Name"
+                />
+
+                <!-- Corners -->
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <!-- Company -->
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full h-full bg-black text-brand-green-200 border-0.3 border-white/40 focus:border focus:border-brand-green-200 rounded outline-none placeholder:text-brand-gray-300 p-4"
+                  placeholder="Company"
+                />
+
+                <!-- Corners -->
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <!-- Phone -->
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full h-full bg-black text-brand-green-200 border-0.3 border-white/40 focus:border focus:border-brand-green-200 rounded outline-none placeholder:text-brand-gray-300 p-4"
+                  placeholder="Phone"
+                />
+
+                <!-- Corners -->
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <!-- Email -->
+              <div class="relative">
+                <input
+                  type="email"
+                  class="w-full h-full bg-black text-brand-green-200 border-0.3 border-white/40 focus:border focus:border-brand-green-200 rounded outline-none placeholder:text-brand-gray-300 p-4"
+                  placeholder="Email"
+                />
+
+                <!-- Corners -->
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <!-- Message -->
+              <div class="relative h-[10.5625rem] lg:col-span-2">
+                <textarea
+                  type="text"
+                  class="w-full h-full bg-black text-brand-green-200 border-0.3 border-white/40 focus:border focus:border-brand-green-200 rounded outline-none placeholder:text-brand-gray-300 resize-none p-4"
+                  placeholder="Message"
+                ></textarea>
+
+                <!-- Corners -->
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute top-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 left-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                    fill="#fff"
+                  />
+                </svg>
+
+                <svg
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute bottom-0 right-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <!-- Privacy Policy -->
+              <div class="flex items-center gap-3 py-3">
+                <div>
+                  <input class="hidden" type="checkbox" name="" id="checkbox" />
+                  <label
+                    for="checkbox"
+                    class="w-5 h-5 grid place-content-center rounded bg-brand-gray-400"
+                  >
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="hidden"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.1754 7.00019C15.0105 7.00548 14.777 7.00548 14.5105 7.3065L9.30867 12.9536L7.38812 10.8329C7.22886 10.6505 6.93742 10.5569 6.71489 10.6207C6.49237 10.6845 6.07301 11.0754 6.015 11.3202C5.95699 11.5649 6.07463 11.8693 6.24051 12.0444L8.79452 14.7907C9.04251 15.0633 9.60876 15.0729 9.85674 14.8002L15.7693 8.32925C15.9568 8.12842 16.0623 7.78574 15.9603 7.52067C15.8582 7.2556 15.437 6.9919 15.1754 7.00019Z"
+                        fill="#020209"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <p>
+                  I have read the
+                  <a
+                    href="/public/privacy-policy.html"
+                    class="text-brand-green-100"
+                    >privacy policy</a
+                  >
+                </p>
+              </div>
+            </div>
+            <button
+              class="group relative h-10 w-full flex items-center justify-center gap-2.5 uppercase text-brand-blue border-brand-blue/5 active:border-brand-blue lg:text-brand-green-100 font-medium text-lg border lg:bg-brand-green-100/5 lg:border-brand-green-200/5 lg:hover:border-brand-green-100 transition-all duration-200 rounded py-6 px-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="291"
+                height="5"
+                viewBox="0 0 291 5"
+                fill="none"
+                class="absolute lg:hidden top-0"
+              >
+                <g filter="url(#filter0_f_0_2799)">
+                  <rect
+                    x="2"
+                    y="2"
+                    width="287"
+                    height="1"
+                    fill="url(#paint0_linear_0_2799)"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_0_2799"
+                    x="0"
+                    y="0"
+                    width="291"
+                    height="5"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="1"
+                      result="effect1_foregroundBlur_0_2799"
+                    />
+                  </filter>
+                  <linearGradient
+                    id="paint0_linear_0_2799"
+                    x1="2"
+                    y1="2.50004"
+                    x2="289"
+                    y2="2.49975"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="white" stop-opacity="0" />
+                    <stop
+                      offset="0.493651"
+                      stop-color="white"
+                      stop-opacity="0.74"
+                    />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>send</span>
+              <svg
+                width="15"
+                height="16"
+                viewBox="0 0 15 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.34375 8H12.6562"
+                  class="stroke-brand-green-100"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.4375 3.78125L12.6562 8L8.4375 12.2188"
+                  class="stroke-brand-green-100"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <!-- Corners -->
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-0 left-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-0 right-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-0 left-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-0 right-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="fixed left-0 top-0 z-40 w-full border-b border-transparent backdrop-blur-xl py-4 lg:py-8 px-15"
+    >
+      <nav class="max-w-nav w-full mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <div class="w-[9.625rem] h-6 lg:w-64 lg:h-10">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo"
+            class="w-full h-full"
+          />
+        </div>
+        <!-- Links -->
+        <ul
+          class="hidden lg:flex gap-8 xl:gap-16 capitalize font-normal text-white/60 text-2xl lg:text-base xl:text-lg"
+        >
+          <li>
+            <a
+              class="hover:text-brand-green-100 transition-all duration-200"
+              href="#hero"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-brand-green-100 transition-all duration-200"
+              href="#what-we-do"
+              >what we do</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-brand-green-100 transition-all duration-200"
+              href="#team"
+              >team</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-brand-green-100 transition-all duration-200"
+              href="#projects"
+              >projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-brand-green-100 transition-all duration-200"
+              href="#contacts"
+              >contacts</a
+            >
+          </li>
+        </ul>
+        <!-- Contact & Start project -->
+        <div class="hidden lg:flex items-center gap-6">
+          <div class="flex items-center gap-4">
+            <a href="#">
+              <img
+                src="./assets/images/icons/phone.svg"
+                alt="Phone icon"
+                class="hover:scale-125 transition-all duration-200"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/images/icons/envelope.svg"
+                alt="Envelope icon"
+                class="hover:scale-125 transition-all duration-200"
+              />
+            </a>
+          </div>
+          <button
+            class="open-contact-us-btn group relative h-10 flex items-center gap-2.5 uppercase text-brand-green-100 font-medium text-lg border border-brand-green-200/5 hover:border-brand-green-100 transition-all duration-200 rounded py-2 px-4"
+          >
+            <span>start project</span>
+            <svg
+              width="15"
+              height="16"
+              viewBox="0 0 15 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.34375 8H12.6562"
+                class="stroke-brand-green-100"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.4375 3.78125L12.6562 8L8.4375 12.2188"
+                class="stroke-brand-green-100"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <!-- Corners -->
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-0 left-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                fill="#00FCBF"
+              />
+            </svg>
+
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-0 right-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                fill="#00FCBF"
+              />
+            </svg>
+
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute bottom-0 left-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                fill="#00FCBF"
+              />
+            </svg>
+
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute bottom-0 right-0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                fill="#00FCBF"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="mobile-menu-btn lg:hidden">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.75 6.375H20.25"
+              stroke="#00FCBF"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.25 10.125H20.25"
+              stroke="#00FCBF"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3.75 13.875H20.25"
+              stroke="#00FCBF"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.25 17.625H20.25"
+              stroke="#00FCBF"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENTS -->
+    <main class="pt-20 lg:pt-40 overflow-hidden lg:overflow-visible">
+      <!-- PROJECTS -->
+      <section id="projects" class="space-y-14 lg:space-y-24 px-15">
+        <div class="space-y-7 lg:space-y-14">
+          <!-- Route & Back -->
+          <div class="space-y-2">
+            <!-- Back -->
+            <a
+              href="/public/index.html"
+              class="flex items-center gap-2 text-sm text-brand-green-100"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6562 7.5H2.34375"
+                  stroke="#00FCBF"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.5625 3.28125L2.34375 7.5L6.5625 11.7188"
+                  stroke="#00FCBF"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Back</span>
+            </a>
+            <!-- Route -->
+            <div class="content text-white">
+              <span>Home</span> <span class="text-brand-gray-200">/</span>
+              <span class="text-brand-gray-200">PoUW Job Information</span>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="space-y-3 lg:space-y-8">
+            <h2>projects</h2>
+            <p class="text-lg lg:text-2xl">
+              We're an experienced team of developers based in NYC, <br />
+              dedicated to delivering quality via a lean and transparent
+              process.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="grid lg:grid-cols-2 grid-rows-2 gap-4 lg:gap-12">
+          <div
+            href="#"
+            class="group relative h-600 bg-product-radial overflow-hidden border border-black after:bg-black/50 lg:hover:border-brand-green-100 after:absolute after:inset-0 after:lg:hover:bg-brand-green-100/5 transition-all duration-200 lg:mt-[7.5rem]"
+          >
+            <img
+              src="./assets/images/project-1.jpg"
+              alt="Project"
+              class="absolute w-full h-full object-cover lg:group-hover:hidden"
+            />
+            <div class="absolute z-10 px-4 lg:left-12 bottom-10 space-y-3">
+              <!-- Technolgoies -->
+              <div class="flex items-center gap-3">
+                <img src="./assets/images/icons/python.svg" alt="Python" />
+                <img src="./assets/images/icons/php.svg" alt="Php" />
+                <img src="./assets/images/icons/nginx.svg" alt="Nginx" />
+              </div>
+              <h4 class="text-32 font-bold uppercase text-white">
+                Mirimus Inc.
+              </h4>
+              <div class="space-y-3">
+                <p
+                  class="lg:hidden lg:group-hover:block text-white lg:text-white/80"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+                <ul
+                  class="hidden lg:group-hover:block list-disc space-y-3 text-white pl-8"
+                >
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="#"
+                class="flex lg:hidden lg:group-hover:flex relative z-20 items-center gap-2 text-brand-green-100 text-lg mt-7"
+              >
+                <span>Project site</span>
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 15.5L15 5.5"
+                    stroke="#00FCBF"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.875 5.5H15V13.625"
+                    stroke="#00FCBF"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            href="#"
+            class="group relative h-600 bg-product-radial overflow-hidden border border-black after:bg-black/50 lg:hover:border-brand-green-100 after:absolute after:inset-0 after:lg:hover:bg-brand-green-100/5 transition-all duration-200"
+          >
+            <img
+              src="./assets/images/project-2.png"
+              alt="Project"
+              class="absolute w-full h-full object-cover lg:group-hover:hidden"
+            />
+            <div class="absolute z-10 px-4 lg:left-12 bottom-10 space-y-3">
+              <!-- Technolgoies -->
+              <div class="flex items-center gap-3">
+                <img src="./assets/images/icons/python.svg" alt="Python" />
+                <img src="./assets/images/icons/php.svg" alt="Php" />
+                <img src="./assets/images/icons/nginx.svg" alt="Nginx" />
+              </div>
+              <h4 class="text-32 font-bold uppercase text-white">
+                Mirimus Inc.
+              </h4>
+              <div class="space-y-3">
+                <p
+                  class="lg:hidden lg:group-hover:block text-white lg:text-white/80"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+                <ul
+                  class="hidden lg:group-hover:block list-disc space-y-3 text-white pl-8"
+                >
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="#"
+                class="flex lg:hidden lg:group-hover:flex relative z-20 items-center gap-2 text-brand-green-100 text-lg mt-7"
+              >
+                <span>Project site</span>
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 15.5L15 5.5"
+                    stroke="#00FCBF"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.875 5.5H15V13.625"
+                    stroke="#00FCBF"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            href="#"
+            class="group relative h-600 bg-product-radial overflow-hidden border border-black after:bg-black/50 lg:hover:border-brand-green-100 after:absolute after:inset-0 after:lg:hover:bg-brand-green-100/5 transition-all duration-200"
+          >
+            <img
+              src="./assets/images/project-3.png"
+              alt="Project"
+              class="absolute w-full h-full object-cover lg:group-hover:hidden"
+            />
+            <div class="absolute z-10 px-4 lg:left-12 bottom-10 space-y-3">
+              <!-- Technolgoies -->
+              <div class="flex items-center gap-3">
+                <img src="./assets/images/icons/python.svg" alt="Python" />
+                <img src="./assets/images/icons/php.svg" alt="Php" />
+                <img src="./assets/images/icons/nginx.svg" alt="Nginx" />
+              </div>
+              <h4 class="text-32 font-bold uppercase text-white">
+                Mirimus Inc.
+              </h4>
+              <div class="space-y-3">
+                <p
+                  class="lg:hidden lg:group-hover:block text-white lg:text-white/80"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+                <ul
+                  class="hidden lg:group-hover:block list-disc space-y-3 text-white pl-8"
+                >
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="#"
+                class="flex lg:hidden lg:group-hover:flex relative z-20 items-center gap-2 text-brand-green-100 text-lg mt-7"
+              >
+                <span>Project site</span>
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 15.5L15 5.5"
+                    stroke="#00FCBF"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.875 5.5H15V13.625"
+                    stroke="#00FCBF"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            href="#"
+            class="group relative h-600 bg-product-radial overflow-hidden border border-black after:bg-black/50 lg:hover:border-brand-green-100 after:absolute after:inset-0 after:lg:hover:bg-brand-green-100/5 transition-all duration-200 lg:-mt-[7.5rem]"
+          >
+            <img
+              src="./assets/images/project-1.jpg"
+              alt="Project"
+              class="absolute w-full h-full object-cover lg:group-hover:hidden"
+            />
+            <div class="absolute z-10 px-4 lg:left-12 bottom-10 space-y-3">
+              <!-- Technolgoies -->
+              <div class="flex items-center gap-3">
+                <img src="./assets/images/icons/python.svg" alt="Python" />
+                <img src="./assets/images/icons/php.svg" alt="Php" />
+                <img src="./assets/images/icons/nginx.svg" alt="Nginx" />
+              </div>
+              <h4 class="text-32 font-bold uppercase text-white">
+                Mirimus Inc.
+              </h4>
+              <div class="space-y-3">
+                <p
+                  class="lg:hidden lg:group-hover:block text-white lg:text-white/80"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+                <ul
+                  class="hidden lg:group-hover:block list-disc space-y-3 text-white pl-8"
+                >
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amehidden group-hover:t, c relative
+                    z-20onsectetur adipiscing elim.
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="flex lg:hidden lg:group-hover:flex relative z-20 items-center gap-2 text-brand-green-100 text-lg mt-7"
+                >
+                  <span>Project site</span>
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15.5L15 5.5"
+                      stroke="#00FCBF"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.875 5.5H15V13.625"
+                      stroke="#00FCBF"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <section
+        class="flex flex-col lg:flex-row gap-3 lg:gap-0 lg:items-center justify-between text-xs lg:text-sm py-6 px-15 lg:p-6"
+      >
+        <p class="text-xs lg:text-sm">
+          Copyright © 2023 Eloquent Bits Inc. All rights reserved.
+        </p>
+        <!-- Links -->
+        <ul class="flex items-center capitalize text-white/80 gap-6">
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-green-100 transition-all duration-300"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#what-we-do"
+              class="hover:text-brand-green-100 transition-all duration-300"
+              >what we do</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team"
+              class="hover:text-brand-green-100 transition-all duration-300"
+              >team</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="hover:text-brand-green-100 transition-all duration-300"
+              >projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contacts"
+              class="hover:text-brand-green-100 transition-all duration-300"
+              >contacts</a
+            >
+          </li>
+        </ul>
+        <a
+          href="/public/privacy-policy.html"
+          class="text-white/80 capitalize hover:text-brand-green-100 transition-all duration-300"
+          >privacy policy</a
+        >
+      </section>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
