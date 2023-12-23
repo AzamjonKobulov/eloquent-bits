@@ -5,6 +5,7 @@ const mobileMenuLinks = document.querySelectorAll('.mobile-menu-close-btn');
 const contactUsModal = document.querySelector('.contact-modal');
 const openContactUsBtns = document.querySelectorAll('.open-contact-us-btn');
 const closeContactUsBtns = document.querySelectorAll('.close-contact-us-btn');
+const navLinks = document.querySelectorAll('.nav-link');
 
 function toggleMobileMenu() {
   mobileMenu.classList.toggle('hidden');
@@ -25,7 +26,9 @@ mobileMenuLinks.forEach((link) => {
 
     toggleMobileMenu();
 
-    navLinks.forEach((otherLink) => otherLink.classList.remove('text-white'));
+    mobileMenuLinks.forEach((otherLink) =>
+      otherLink.classList.remove('text-white')
+    );
     link.classList.add('text-white');
 
     const targetId = link.getAttribute('href').substring(1);
