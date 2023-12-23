@@ -20,11 +20,11 @@ function closeMobileMenu() {
 mobileMenuBtn.addEventListener('click', toggleMobileMenu);
 mobileMenuCloseBtn.addEventListener('click', closeMobileMenu);
 
-navLinks.forEach((link) => {
+mobileMenuLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
 
-    // toggleMobileMenu();
+    toggleMobileMenu();
 
     navLinks.forEach((otherLink) => otherLink.classList.remove('text-white'));
     link.classList.add('text-white');
