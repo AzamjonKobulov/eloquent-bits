@@ -49,12 +49,12 @@ navLinks.forEach((link) => {
 
     link.classList.add('text-white');
 
-    const targetId = link.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
+    // const targetId = link.getAttribute('href').substring(1);
+    // const targetSection = document.getElementById(targetId);
 
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    // if (targetSection) {
+    //   targetSection.scrollIntoView({ behavior: 'smooth' });
+    // }
   });
 });
 
