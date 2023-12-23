@@ -117,5 +117,3 @@ document.addEventListener('DOMContentLoaded', function () {
     .getElementById('btn-next')
     .addEventListener('click', () => mySwiper.slideNext());
 });
-
-const navLinks = document.querySelectorAll('.nav-link');
