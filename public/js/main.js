@@ -20,7 +20,7 @@ function closeMobileMenu() {
 mobileMenuBtn.addEventListener('click', toggleMobileMenu);
 mobileMenuCloseBtn.addEventListener('click', closeMobileMenu);
 
-mobileMenuLinks.forEach((link) => {
+navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
 
