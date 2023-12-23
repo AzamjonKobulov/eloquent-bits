@@ -40,24 +40,6 @@ mobileMenuLinks.forEach((link) => {
   });
 });
 
-// Same event listener logic for the navbar links
-navLinks.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    navLinks.forEach((otherLink) => otherLink.classList.remove('text-white'));
-
-    link.classList.add('text-white');
-
-    // const targetId = link.getAttribute('href').substring(1);
-    // const targetSection = document.getElementById(targetId);
-
-    // if (targetSection) {
-    //   targetSection.scrollIntoView({ behavior: 'smooth' });
-    // }
-  });
-});
-
 // Function to toggle the CONTACT US WINDOW
 function toggleContactUs() {
   contactUsModal.classList.toggle('hidden');
