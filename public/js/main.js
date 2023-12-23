@@ -25,9 +25,7 @@ mobileMenuLinks.forEach((link) => {
 
     toggleMobileMenu();
 
-    mobileMenuLinks.forEach((otherLink) =>
-      otherLink.classList.remove('text-white')
-    );
+    navLinks.forEach((otherLink) => otherLink.classList.remove('text-white'));
     link.classList.add('text-white');
 
     const targetId = link.getAttribute('href').substring(1);
