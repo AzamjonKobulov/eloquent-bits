@@ -1438,6 +1438,10 @@ input[type='checkbox']:checked + label > svg{
 
 @media (min-width: 1024px){
 
+  .lg\:relative{
+    position: relative;
+  }
+
   .lg\:-top-32{
     top: -8rem;
   }
