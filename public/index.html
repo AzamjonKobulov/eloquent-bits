@@ -1012,7 +1012,7 @@
       <section id="hero" class="relative space-y-24 px-15">
         <!-- Video -->
         <div
-          class="absolute w-[43.75rem] sm:w-[62.5rem] md:w-[81.25rem] lg:w-full left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 after:absolute after:inset-0 after:bg-black/50 after:z-10"
+          class="absolute hidden lg:block w-[43.75rem] sm:w-[62.5rem] md:w-[81.25rem] lg:w-full left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 after:absolute after:inset-0 after:bg-black/50 after:z-10"
         >
           <video
             autoplay
@@ -1021,6 +1021,19 @@
             class="w-full -mt-12 md:-mt-20 lg:mt-0 mix-blend-darken"
           >
             <source src="./assets/videos/hero.webm" type="video/mp4" />
+          </video>
+        </div>
+        <!-- Video -->
+        <div
+          class="absolute lg:hidden w-[43.75rem] sm:w-[62.5rem] md:w-[81.25rem] lg:w-full left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 after:absolute after:inset-0 after:bg-black/50 after:z-10"
+        >
+          <video
+            autoplay
+            muted
+            loop
+            class="w-full -mt-12 md:-mt-20 lg:mt-0 mix-blend-darken"
+          >
+            <source src="./assets/videos/hero-mobile.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="relative top-24 lg:top-80 space-y-24">
