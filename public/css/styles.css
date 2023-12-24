@@ -668,12 +668,6 @@ section{
 .z-50{
   z-index: 50;
 }
-.z-0{
-  z-index: 0;
-}
-.-z-10{
-  z-index: -10;
-}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
