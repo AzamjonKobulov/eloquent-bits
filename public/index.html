@@ -825,7 +825,7 @@
           <li>
             <a
               class="nav-link hover:text-brand-green-100 transition-all duration-200"
-              href="#hero"
+              href="/"
               >home</a
             >
           </li>
@@ -1020,7 +1020,7 @@
             loop
             class="w-full -mt-12 md:-mt-20 lg:mt-0 mix-blend-darken"
           >
-            <source src="./assets/videos/hero.mp4" type="video/mp4" />
+            <source src="./assets/videos/hero.webm" type="video/mp4" />
           </video>
         </div>
         <div class="relative top-24 lg:top-80 space-y-24">
@@ -1615,107 +1615,109 @@
       <!-- START -->
       <section id="start" class="px-15">
         <div
-          class="relative bg-brand-blue/5 text-center rounded py-24 px-6 lg:p-24"
+          class="relative bg-brand-blue/5 text-center rounded overflow-hidden py-24 px-6 lg:p-24"
         >
-          <div class="space-y-6">
-            <h2 class="max-w-72 mx-auto lg:max-w-none">
-              Start your project with us
-            </h2>
-            <p class="max-w-xl mx-auto text-lg lg:text-2xl">
-              Our company can help you in starting your project or upgrading an
-              existing one in a short time
-            </p>
+          <div class="relative z-30">
+            <div class="space-y-6">
+              <h2 class="max-w-72 mx-auto lg:max-w-none">
+                Start your project with us
+              </h2>
+              <p class="max-w-xl mx-auto text-lg lg:text-2xl">
+                Our company can help you in starting your project or upgrading
+                an existing one in a short time
+              </p>
+            </div>
+            <button
+              class="open-contact-us-btn group relative z-30 h-16 mx-auto flex items-center justify-center gap-2.5 uppercase text-brand-blue font-medium text-2xl bg-brand-blue/5 border border-brand-green-100/5 hover:border-brand-blue transition-all duration-200 rounded mt-6 lg:mt-12 py-4 px-6 lg:px-8"
+            >
+              <span>start project</span>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.84375 7.5H13.1562"
+                  stroke="#00BFFC"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.9375 3.28125L13.1562 7.5L8.9375 11.7188"
+                  stroke="#00BFFC"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <!-- Corners -->
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-0 left-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                  fill="#00BFFC"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-0 right-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                  fill="#00BFFC"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-0 left-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                  fill="#00BFFC"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-0 right-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                  fill="#00BFFC"
+                />
+              </svg>
+            </button>
           </div>
-          <button
-            class="open-contact-us-btn group relative z-20 h-16 mx-auto flex items-center justify-center gap-2.5 uppercase text-brand-blue font-medium text-2xl bg-brand-blue/5 border border-brand-green-100/5 hover:border-brand-blue transition-all duration-200 rounded mt-6 lg:mt-12 py-4 px-6 lg:px-8"
-          >
-            <span>start project</span>
-            <svg
-              width="16"
-              height="15"
-              viewBox="0 0 16 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.84375 7.5H13.1562"
-                stroke="#00BFFC"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8.9375 3.28125L13.1562 7.5L8.9375 11.7188"
-                stroke="#00BFFC"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <!-- Corners -->
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-0 left-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
-                fill="#00BFFC"
-              />
-            </svg>
-
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-0 right-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
-                fill="#00BFFC"
-              />
-            </svg>
-
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute bottom-0 left-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
-                fill="#00BFFC"
-              />
-            </svg>
-
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute bottom-0 right-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
-                fill="#00BFFC"
-              />
-            </svg>
-          </button>
 
           <!-- Corners -->
           <svg
@@ -1724,7 +1726,7 @@
             height="31"
             viewBox="0 0 31 31"
             fill="none"
-            class="absolute top-0 left-0"
+            class="absolute top-0 left-0 z-30"
           >
             <path
               fill-rule="evenodd"
@@ -1739,7 +1741,7 @@
             height="31"
             viewBox="0 0 31 31"
             fill="none"
-            class="absolute top-0 right-0"
+            class="absolute top-0 right-0 z-30"
           >
             <path
               fill-rule="evenodd"
@@ -1754,7 +1756,7 @@
             height="31"
             viewBox="0 0 31 31"
             fill="none"
-            class="absolute bottom-0 right-0"
+            class="absolute bottom-0 right-0 z-30"
           >
             <path
               fill-rule="evenodd"
@@ -1769,7 +1771,7 @@
             height="31"
             viewBox="0 0 31 31"
             fill="none"
-            class="absolute bottom-0 left-0"
+            class="absolute bottom-0 left-0 z-30"
           >
             <path
               fill-rule="evenodd"
@@ -1782,8 +1784,19 @@
           <img
             src="./assets/images/bg-images/start-project.png"
             alt="Background Image"
-            class="absolute inset-0 h-full"
+            class="absolute z-20 inset-0 h-full"
           />
+
+          <div class="absolute inset-0 bg-black/70 z-10"></div>
+
+          <!-- Video -->
+          <div
+            class="w-[500%] h-[500%] absolute left-1/2 -translate-x-1/2 z-0 after:absolute inset-0 after:inset-0 after:bg-black/80 after:z-10"
+          >
+            <video autoplay muted loop class="w-full h-full">
+              <source src="./assets/videos/start.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
 
@@ -3131,10 +3144,15 @@
       </section>
 
       <!-- CONTACTS -->
-      <div
-        id="contacts"
-        class="relative h-[44.5rem] bg-contacts-mobile lg:bg-contacts bg-no-repeat bg-cover px-15"
-      >
+      <div id="contacts" class="relative h-[44.5rem] px-15">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.7774382716007!2d37.67352711566!3d55.76725532582228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C%20Russia!5e0!3m2!1sen!2s!4v1703411991089!5m2!1sen!2s"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="absolute inset-0 w-full h-full after:absolute after:inset-0 after:bg-black/70 after:z-40"
+        ></iframe>
         <!-- Location Point -->
         <img
           src="./assets/images/icons/location-point.svg"

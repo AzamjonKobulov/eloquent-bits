@@ -601,10 +601,6 @@ section{
 .inset-0{
   inset: 0px;
 }
-.inset-x-0{
-  left: 0px;
-  right: 0px;
-}
 .\!bottom-6{
   bottom: 1.5rem !important;
 }
@@ -653,6 +649,9 @@ section{
 .top-4{
   top: 1rem;
 }
+.z-0{
+  z-index: 0;
+}
 .z-10{
   z-index: 10;
 }
@@ -667,6 +666,9 @@ section{
 }
 .z-50{
   z-index: 50;
+}
+.z-\[1000\]{
+  z-index: 1000;
 }
 .mx-auto{
   margin-left: auto;
@@ -684,11 +686,11 @@ section{
 .mt-5{
   margin-top: 1.25rem;
 }
-.mt-7{
-  margin-top: 7px;
-}
 .mt-6{
   margin-top: 1.5rem;
+}
+.mt-7{
+  margin-top: 7px;
 }
 .flex{
   display: flex;
@@ -735,6 +737,9 @@ section{
 .h-\[44\.5rem\]{
   height: 44.5rem;
 }
+.h-\[500\%\]{
+  height: 500%;
+}
 .h-full{
   height: 100%;
 }
@@ -755,6 +760,9 @@ section{
 }
 .w-\[43\.75rem\]{
   width: 43.75rem;
+}
+.w-\[500\%\]{
+  width: 500%;
 }
 .w-\[9\.625rem\]{
   width: 9.625rem;
@@ -921,6 +929,9 @@ section{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+.bg-black\/70{
+  background-color: rgb(0 0 0 / 0.7);
+}
 .bg-black\/80{
   background-color: rgb(0 0 0 / 0.8);
 }
@@ -936,18 +947,6 @@ section{
 }
 .bg-brand-green-200\/10{
   background-color: rgb(0 252 191 / 0.1);
-}
-.bg-contacts-mobile{
-  background-image: url('/assets/images/bg-images/location-mobile.png');
-}
-.bg-none{
-  background-image: none;
-}
-.bg-cover{
-  background-size: cover;
-}
-.bg-no-repeat{
-  background-repeat: no-repeat;
 }
 .fill-white{
   fill: #fff;
@@ -1126,9 +1125,6 @@ section{
 .mix-blend-darken{
   mix-blend-mode: darken;
 }
-.mix-blend-lighten{
-  mix-blend-mode: lighten;
-}
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1215,9 +1211,24 @@ input[type='checkbox']:checked + label > svg{
   z-index: 10;
 }
 
+.after\:z-40::after{
+  content: var(--tw-content);
+  z-index: 40;
+}
+
 .after\:bg-black\/50::after{
   content: var(--tw-content);
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.after\:bg-black\/70::after{
+  content: var(--tw-content);
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+.after\:bg-black\/80::after{
+  content: var(--tw-content);
+  background-color: rgb(0 0 0 / 0.8);
 }
 
 .hover\:scale-125:hover{
@@ -1327,16 +1338,16 @@ input[type='checkbox']:checked + label > svg{
     margin-top: 0px;
   }
 
+  .lg\:mt-12{
+    margin-top: 3rem;
+  }
+
   .lg\:mt-40{
     margin-top: 10rem;
   }
 
   .lg\:mt-\[7\.5rem\]{
     margin-top: 7.5rem;
-  }
-
-  .lg\:mt-12{
-    margin-top: 3rem;
   }
 
   .lg\:block{
@@ -1451,12 +1462,6 @@ input[type='checkbox']:checked + label > svg{
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-y-12 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-  }
-
   .lg\:space-y-14 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1517,10 +1522,6 @@ input[type='checkbox']:checked + label > svg{
 
   .lg\:bg-brand-green-100\/5{
     background-color: rgb(1 252 191 / 0.05);
-  }
-
-  .lg\:bg-contacts{
-    background-image: url('/assets/images/bg-images/location.png');
   }
 
   .lg\:p-12{
