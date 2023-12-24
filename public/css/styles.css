@@ -693,6 +693,9 @@ section{
 .mt-7{
   margin-top: 7px;
 }
+.mt-6{
+  margin-top: 1.5rem;
+}
 .flex{
   display: flex;
 }
@@ -943,6 +946,9 @@ section{
 .bg-contacts-mobile{
   background-image: url('/assets/images/bg-images/location-mobile.png');
 }
+.bg-none{
+  background-image: none;
+}
 .bg-cover{
   background-size: cover;
 }
@@ -1122,6 +1128,12 @@ section{
 }
 .underline-offset-2{
   text-underline-offset: 2px;
+}
+.mix-blend-darken{
+  mix-blend-mode: darken;
+}
+.mix-blend-lighten{
+  mix-blend-mode: lighten;
 }
 .outline-none{
   outline: 2px solid transparent;
@@ -1327,6 +1339,10 @@ input[type='checkbox']:checked + label > svg{
 
   .lg\:mt-\[7\.5rem\]{
     margin-top: 7.5rem;
+  }
+
+  .lg\:mt-12{
+    margin-top: 3rem;
   }
 
   .lg\:block{

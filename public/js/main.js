@@ -7,6 +7,59 @@ const openContactUsBtns = document.querySelectorAll('.open-contact-us-btn');
 const closeContactUsBtns = document.querySelectorAll('.close-contact-us-btn');
 const navLinks = document.querySelectorAll('.nav-link');
 
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5, // Adjust the threshold as needed
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const targetId = entry.target.getAttribute('id');
+    const correspondingNavLink = document.querySelector(
+      `.nav-link[href="#${targetId}"]`
+    );
+
+    if (entry.isIntersecting) {
+      // Remove 'text-white' class from all links
+      navLinks.forEach((otherLink) => otherLink.classList.remove('text-white'));
+
+      // Add 'text-white' class to the current active link
+      correspondingNavLink.classList.add('text-white');
+    }
+  });
+}, observerOptions);
+
+// Observe each section
+navLinks.forEach((link) => {
+  const targetId = link.getAttribute('href').substring(1);
+  const targetSection = document.getElementById(targetId);
+
+  if (targetSection) {
+    observer.observe(targetSection);
+  }
+});
+
+// Handle click events as before
+navLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    // Remove 'text-white' class from all links
+    navLinks.forEach((otherLink) => otherLink.classList.remove('text-white'));
+
+    // Add 'text-white' class to the clicked link
+    link.classList.add('text-white');
+
+    const targetId = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
 function toggleMobileMenu() {
   mobileMenu.classList.toggle('hidden');
   document.body.classList.toggle('overflow-hidden');
