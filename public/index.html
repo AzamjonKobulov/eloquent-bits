@@ -3165,21 +3165,24 @@
       </section>
 
       <!-- CONTACTS -->
-      <div id="contacts" class="relative h-[44.5rem]">
+      <div
+        id="contacts"
+        class="relative h-[44.5rem] after:absolute after:h-full inset-0 after:bg-black/50 after:z-30"
+      >
         <!-- Location Point -->
         <img
           src="./assets/images/icons/location-point.svg"
           alt="Location Pointer"
           class="absolute left-1/2 top-2/3 lg:left-2/3 lg:top-1/2"
         />
-        <div class="map absolute top-0 w-full h-full bg-black/50 z-0"></div>
+
         <div id="map" class="h-full"></div>
 
         <!-- Text & Button -->
         <section
-          class="max-w-base mx-auto w-full absolute left-4 lg:left-1/4 -translate-x-1/2 top-0 px-15"
+          class="max-w-base mx-auto w-full absolute top-0 left-1/2 -translate-x-1/2 px-15"
         >
-          <div class="max-w-base mx-auto w-full space-y-8">
+          <div class="absolute left-0 top-0 w-full space-y-8">
             <h2>Contacts</h2>
             <div class="text-lg lg:text-2xl space-y-4">
               <div class="space-y-4">

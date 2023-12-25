@@ -935,6 +935,10 @@ section{
 .border-white\/40{
   border-color: rgb(255 255 255 / 0.4);
 }
+.border-red-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
 .bg-\[\#011A14C9\]\/80{
   background-color: rgb(1 26 20 / 0.8);
 }
@@ -1225,6 +1229,16 @@ input[type='checkbox']:checked + label > svg{
 .after\:z-10::after{
   content: var(--tw-content);
   z-index: 10;
+}
+
+.after\:z-30::after{
+  content: var(--tw-content);
+  z-index: 30;
+}
+
+.after\:h-full::after{
+  content: var(--tw-content);
+  height: 100%;
 }
 
 .after\:bg-black\/50::after{
