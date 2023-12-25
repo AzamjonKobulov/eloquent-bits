@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script type="module" src="./js/map.js"></script>
     <title>Eloquent Bits</title>
   </head>
   <body class="relative">
@@ -3163,118 +3165,122 @@
       </section>
 
       <!-- CONTACTS -->
-      <div
-        id="contacts"
-        class="relative h-[44.5rem] bg-contacts bg-no-repeat bg-cover px-15"
-      >
+      <div id="contacts" class="relative h-[44.5rem]">
         <!-- Location Point -->
         <img
           src="./assets/images/icons/location-point.svg"
           alt="Location Pointer"
           class="absolute left-1/2 top-2/3 lg:left-2/3 lg:top-1/2"
         />
+        <div class="map absolute top-0 w-full h-full bg-black/50 z-0"></div>
+        <div id="map" class="h-full"></div>
+
         <!-- Text & Button -->
-        <section class="space-y-8">
-          <h2>Contacts</h2>
-          <div class="text-lg lg:text-2xl space-y-4">
-            <div class="space-y-4">
-              <a href="#" class="text-white/80">1681 Brodway, NY</a>
-              <div class="flex flex-col space-y-4 text-brand-green-100">
-                <a href="#">+1 (347) 251-4127</a>
-                <a href="#">hello@eloquentbits.com</a>
+        <section
+          class="max-w-base mx-auto w-full absolute left-4 lg:left-1/4 -translate-x-1/2 top-0 px-15"
+        >
+          <div class="max-w-base mx-auto w-full space-y-8">
+            <h2>Contacts</h2>
+            <div class="text-lg lg:text-2xl space-y-4">
+              <div class="space-y-4">
+                <a href="#" class="text-white/80">1681 Brodway, NY</a>
+                <div class="flex flex-col space-y-4 text-brand-green-100">
+                  <a href="#">+1 (347) 251-4127</a>
+                  <a href="#">hello@eloquentbits.com</a>
+                </div>
               </div>
             </div>
+            <button
+              class="open-contact-us-btn relative lg:w-fit flex items-center justify-center lg:justify-start gap-2.5 text-brand-green-100 capitalize font-medium text-2xl bg-brand-green-100/5 border border-brand-green-100/5 rounded hover:border-brand-green-100 py-4 px-8"
+            >
+              <span>Contact Us</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.34375 7.5H12.6562"
+                  stroke="#00FCBF"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.4375 3.28125L12.6562 7.5L8.4375 11.7188"
+                  stroke="#00FCBF"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <!-- Corners -->
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-0 left-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-0 right-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-0 left-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-0 right-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
+                  fill="#00FCBF"
+                />
+              </svg>
+            </button>
           </div>
-          <button
-            class="open-contact-us-btn relative lg:w-fit flex items-center justify-center lg:justify-start gap-2.5 text-brand-green-100 capitalize font-medium text-2xl bg-brand-green-100/5 border border-brand-green-100/5 rounded hover:border-brand-green-100 py-4 px-8"
-          >
-            <span>Contact Us</span>
-            <svg
-              width="15"
-              height="15"
-              viewBox="0 0 15 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.34375 7.5H12.6562"
-                stroke="#00FCBF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8.4375 3.28125L12.6562 7.5L8.4375 11.7188"
-                stroke="#00FCBF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <!-- Corners -->
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-0 left-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M4 0H7V0.3H4C1.95655 0.3 0.3 1.95655 0.3 4V7H0V4C0 1.79086 1.79086 0 4 0Z"
-                fill="#00FCBF"
-              />
-            </svg>
-
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-0 right-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7 4L7 7L6.7 7L6.7 4C6.7 1.95655 5.04345 0.3 3 0.3L-1.31134e-08 0.3L0 -3.0598e-07L3 -1.74846e-07C5.20914 -7.82811e-08 7 1.79086 7 4Z"
-                fill="#00FCBF"
-              />
-            </svg>
-
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute bottom-0 left-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M-1.74846e-07 3L-3.05979e-07 0L0.3 -1.31134e-08L0.3 3C0.3 5.04345 1.95655 6.7 4 6.7L7 6.7L7 7L4 7C1.79086 7 -7.8281e-08 5.20914 -1.74846e-07 3Z"
-                fill="#00FCBF"
-              />
-            </svg>
-
-            <svg
-              width="7"
-              height="7"
-              viewBox="0 0 7 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute bottom-0 right-0"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3 7L4.76837e-07 7L4.5061e-07 6.7L3 6.7C5.04345 6.7 6.7 5.04345 6.7 3L6.7 2.62268e-08L7 0L7 3C7 5.20914 5.20914 7 3 7Z"
-                fill="#00FCBF"
-              />
-            </svg>
-          </button>
         </section>
       </div>
     </main>
@@ -3336,5 +3342,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyzsBTcsNAABofN-ehqiTUx9CnrQXisb4&callback=initMap&v=weekly"
+      defer
+    ></script>
   </body>
 </html>

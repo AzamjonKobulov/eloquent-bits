@@ -1,0 +1,12 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="80" fill="#00FCBF" fill-opacity="0.02"/>
+<circle cx="40" cy="40" r="6" fill="#00FCBF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-1.74846e-07 76L-1.35505e-06 49L0.499999 49L0.5 76C0.5 77.933 2.06701 79.5 4 79.5L31 79.5L31 80L4 80C1.79086 80 -7.8281e-08 78.2091 -1.74846e-07 76Z" fill="#00FCBF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L31 0V0.5L4 0.5C2.067 0.5 0.5 2.06701 0.5 4L0.5 31H0L0 4C0 1.79086 1.79086 0 4 0Z" fill="#00FCBF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M80 4L80 31L79.5 31L79.5 4C79.5 2.067 77.933 0.5 76 0.5L49 0.499999L49 -1.35505e-06L76 -1.74846e-07C78.2091 -7.82812e-08 80 1.79086 80 4Z" fill="#00FCBF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M76 80L49 80L49 79.5L76 79.5C77.933 79.5 79.5 77.933 79.5 76L79.5 49L80 49L80 76C80 78.2091 78.2091 80 76 80Z" fill="#00FCBF"/>
+<path d="M0 40H20" stroke="#00FCBF" stroke-width="0.5"/>
+<path d="M60 40H80" stroke="#00FCBF" stroke-width="0.5"/>
+<path d="M40 0L40 20" stroke="#00FCBF" stroke-width="0.5"/>
+<path d="M40 60L40 80" stroke="#00FCBF" stroke-width="0.5"/>
+</svg>
